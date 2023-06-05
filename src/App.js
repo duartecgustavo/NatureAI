@@ -10,7 +10,6 @@ function App() {
         <MainSection/>
       </Div>
       <Div className="branco">
-        VAI CURINTIA
       </Div>
       <Div className="branco">
         VAI santos
