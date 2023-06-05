@@ -14,7 +14,7 @@ function App() {
       <Div className="verde">
         <MainSection />
       </Div>
-      <Div className="azul-claro" style={{ display: 'flex', alignItems: 'center' }}>
+      <Div className="azul-claro" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{
           gap: '30px',
           display: 'flex',
