@@ -23,9 +23,15 @@ function App() {
           <h2 style={{ textAlign: 'center' }}>
             Exemplos de uso/perguntas para se fazer 🌱
           </h2>
-          <img src={ex1} />
-          <img src={ex2} />
-          <img src={ex3} />
+          <div className="text-center">
+            <img src={ex1} className="img-fluid" />
+          </div>
+          <div className="text-center">
+            <img src={ex2} className="img-fluid" />
+          </div>
+          <div className="text-center">
+            <img src={ex3} className="img-fluid" />
+          </div>
         </div>
       </Div>
       <Div className="azul-claro">
