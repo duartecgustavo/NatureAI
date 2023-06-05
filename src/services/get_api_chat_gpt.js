@@ -1,15 +1,35 @@
 import { API_CHAT_GPT, OPENAI_API_KEY } from '../constants/api_chat_gpt';
 
-export function callChatGpt() {
+// CONECTADO AO CHAT
+// export async function callChatGpt(msg) {
 
-    const url = API_CHAT_GPT
-    const headers = { 'Content-Type': 'application/json', 'Authorization': `Bearer ${OPENAI_API_KEY}`, }
-    const body = {
-        "model": "gpt-3.5-turbo",
-        "messages": [{ "role": "user", "content": "Hello!" }]
-    }
+//     const url = API_CHAT_GPT
+//     const headers = { 'Content-Type': 'application/json', 'Authorization': `Bearer ${OPENAI_API_KEY}`, }
+//     const body = {
+//         "model": "gpt-3.5-turbo",
+//         "messages": [{ "role": "user", "content": `${msg}` }]
+//     }
 
-    // try {
+//     try {
+//         const response = await fetch(url, {
+//             method: 'POST',
+//             headers: headers,
+//             body: JSON.stringify(body)
+//         })
+
+
+
+//         const data = await response.json();
+
+//         return data
+//     } catch (err) {
+//         console.log('error', err)
+//     }
+// }
+
+// MOCK DO RETORNO DO CHAT
+export async function callChatGpt(msg) {
+    console.log('MENSAGE', msg)
 
     const data = {
         "id": "chatcmpl-7NUkNtf66RBkpbW09Y7jpPRPpYC58",
@@ -32,20 +52,6 @@ export function callChatGpt() {
             }
         ]
     }
-
-    // const response = await fetch(url, {
-    //     method: 'POST',
-    //     headers: headers,
-    //     body: JSON.stringify(body)
-    // })
-    // const data = await response.json();
-
     return data
-
-    // console.log('OPENAI_API_KEY', OPENAI_API_KEY)
-    // console.log('data', data)
-    // } catch (err) {
-    // console.log('error', err)
-    // }
 }
 

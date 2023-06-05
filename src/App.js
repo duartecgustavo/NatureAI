@@ -1,29 +1,20 @@
-import { Div, DivWhite } from "./global-styled-components";
-import { callChatGpt } from "./services/get_api_chat_gpt";
+import { Chat } from "./components/page_chat/page_chat";
+import { Div } from "./global-styled-components";
+import GlobalStyle from "./styles/global";
 
 function App() {
 
-  // async function dataTeste() {
-  //   try {
-  //     let teste = await callChatGpt();
-  //     return teste;
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }
-
-  // console.log('dataTeste', dataTeste)
-
   return (
     <>
+      <GlobalStyle />
+      <Div className="azul-claro">
+        <Chat />
+      </Div>
       <Div className="verde">
         HELLO WORLD!
       </Div>
       <Div className="branco">
         VAI CURINTIA
-      </Div>
-      <Div className="branco">
-        VAI santos
       </Div>
     </>
   );
