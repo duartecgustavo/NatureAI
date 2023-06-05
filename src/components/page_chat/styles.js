@@ -18,7 +18,9 @@ export const NavbarChat = styled.div`
     
     width: 100%;
     height: 20%;
+    background-color: white;
 
+    
     position: absolute;
     top: 0;
 
@@ -65,7 +67,6 @@ export const ButtonChat = styled.button`
   }
   `
 export const ContainerMessage = styled.div`
-  height: 55px;
   width: auto;
   display: flex;
   align-items: center;
@@ -87,6 +88,7 @@ export const HistoryChat = styled.div`
   justify-content: end;
 
   background-color: white;
+  overflow-y: hidden;
 `
 
 export const MessageBox = styled.div`
@@ -99,6 +101,6 @@ export const MessageBox = styled.div`
   background-color: #DEFFB4;
 
     overflow: hidden;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     text-overflow: ellipsis;
   `

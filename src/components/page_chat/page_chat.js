@@ -29,7 +29,7 @@ export function Chat() {
         <>
             <ContainerChat>
                 <NavbarChat className="p-5">
-                    <h1>Fale com o NatureAI</h1>
+                    <h1>Fale com o NatureAI 🥦</h1>
                 </NavbarChat>
                 <HistoryChat>
                     {messages?.map((item) => (

@@ -29,7 +29,7 @@ import { API_CHAT_GPT, OPENAI_API_KEY } from '../constants/api_chat_gpt';
 
 // MOCK DO RETORNO DO CHAT
 export async function callChatGpt(msg) {
-    console.log('MENSAGE', msg)
+    const resposta = `O chat está fora no momento ☠️`;
 
     const data = {
         "id": "chatcmpl-7NUkNtf66RBkpbW09Y7jpPRPpYC58",
@@ -45,7 +45,7 @@ export async function callChatGpt(msg) {
             {
                 "message": {
                     "role": "assistant",
-                    "content": "Hi there, how may I assist you today?"
+                    "content": `${resposta}`
                 },
                 "finish_reason": "stop",
                 "index": 0
