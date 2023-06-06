@@ -3,11 +3,7 @@ import { API_CHAT_GPT, OPENAI_API_KEY } from '../constants/api_chat_gpt';
 // CONECTADO AO CHAT
 export async function callChatGpt(msg) {
 
-    const prompt = `
-        Generate keyword in Portuguese for next post: ${msg}.
-        Return each item separated by a comma, in lowercase, an without a line break.
-        The answer must contain a maximum of 450 characters.
-    `;
+    const prompt = `Generate keyword in Portuguese for next post: ${msg}. Return each item separated by a comma, in lowercase, an without a line break. The answer must contain a maximum of 450 characters. `;
 
     const url = API_CHAT_GPT
     const headers = { 'Content-Type': 'application/json', 'Authorization': `Bearer ${OPENAI_API_KEY}`, }
