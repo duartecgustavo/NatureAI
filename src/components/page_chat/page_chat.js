@@ -10,10 +10,6 @@ export function Chat() {
     const [inputValue, setInputValue] = useState({});
     const [messages, setMessages] = useState([])
 
-    useEffect(() => {
-        console.log('messages', messages);
-    }, [messages]);
-
     async function handleMessage() {
         if (inputValue.msg.trim() !== "") {
 
