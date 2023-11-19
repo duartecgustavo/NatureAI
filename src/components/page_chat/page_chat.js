@@ -14,7 +14,7 @@ import {
 export function Chat() {
   const [inputValue, setInputValue] = useState({});
   const [messages, setMessages] = useState([]);
-
+    console.log("rre")
   async function handleMessage() {
     if (inputValue.msg.trim() !== "") {
       const response = await callChatGpt(inputValue.msg);
