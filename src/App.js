@@ -3,9 +3,10 @@ import { Div } from "./global-styled-components";
 import GlobalStyle from "./styles/global";
 import { MainSection } from "./components/main_section/main_section";
 import { SecondSection } from "./components/second_section/second_section";
-import ex1 from "./assets/ex1.png";
-import ex2 from "./assets/ex2.png";
-import ex3 from "./assets/ex3.png";
+import { DepoimentsSection } from "./components/depoiments_section/depoiments";
+import { CultivationExperience } from "./components/cultivation_experience/cultivation_experience";
+import Footer from "./components/footer/footer";
+import { WhoWeAre } from "./components/who-we-are/WhoWeAre";
 
 function App() {
   return (
@@ -14,42 +15,58 @@ function App() {
       <Div className="verde">
         <MainSection />
       </Div>
-      <Div className="branco">
+      <Div
+        className="amarelo"
+        style={{
+          height: "auto",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <WhoWeAre />
+      </Div>
+      <Div className="azul-claro">
         <SecondSection />
       </Div>
-
+      <Div
+        className="branco"
+        style={{
+          height: "auto",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <CultivationExperience />
+      </Div>
+      <Div
+        className="amarelo"
+        style={{
+          // height: "auto",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Chat />
+      </Div>
       <Div
         className="azul-claro"
         style={{
+          height: "auto",
           display: "flex",
-          alignItems: "center",
+          flexDirection: "column",
           justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <div
-          style={{
-            gap: "30px",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <h2 style={{ textAlign: "center" }}>
-            Exemplos de uso/perguntas para se fazer 🌱
-          </h2>
-          <div className="text-center">
-            <img src={ex1} className="img-fluid" />
-          </div>
-          <div className="text-center">
-            <img src={ex2} className="img-fluid" />
-          </div>
-          <div className="text-center">
-            <img src={ex3} className="img-fluid" />
-          </div>
-        </div>
+        <DepoimentsSection />
       </Div>
-      <Div className="azul-claro">
-        <Chat />
-      </Div>
+      <Footer />
     </>
   );
 }

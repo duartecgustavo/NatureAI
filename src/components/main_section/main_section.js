@@ -1,14 +1,13 @@
-import { ContentContainer, Nav } from "./styles";
 import brasil from "../../assets/brasil.svg";
-import img3 from "../../assets/img3.jpg";
-import img1 from "../../assets/img1.png";
+import EnviromentBro from "../../assets/environment-bro1.svg";
+import { ContentContainer, Nav } from "./styles";
 
 export function MainSection() {
   return (
     <>
       <Nav className="navbar fixed-top">
         <div className="container-fluid">
-          <h1>NatureAI</h1>
+          <h1>NatureAI 🥦</h1>
           <a className="navbar-brand" href="#">
             <img
               src={brasil}
@@ -23,16 +22,29 @@ export function MainSection() {
 
       <ContentContainer className="container h-100">
         <div className="row h-100">
-          <div className="col-12 col-lg-6 bg-transparent" style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center' }}>
-            <h1>Bem-vindo</h1>
-            <p>Um novo jeito de pensar sobre cultivo  e agricultura</p>
+          <div
+            className="col-12 col-lg-6"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "center",
+            }}
+          >
+            <h1 style={{ color: "black" }}>Seja bem vindo ao NatureAI 🥦</h1>
+            <p style={{ color: "black" }}>
+              Um novo jeito de aprender sobre cultivo e agricultura!
+            </p>
           </div>
-          <div className="col-12 col-lg-6" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src={img1}
-              width="500"
-              height="500"
-              alt="...">
-            </img>
+          <div
+            className="col-12 col-lg-6"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img src={EnviromentBro} width="500" height="500" alt="..."></img>
           </div>
         </div>
       </ContentContainer>

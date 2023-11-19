@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const ContainerChat = styled.div`
   width: 100%;
@@ -6,30 +6,30 @@ export const ContainerChat = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #D0D0D0;
+  border: 1px solid #d0d0d0;
 
-
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   position: relative;
-  `
+`;
 
 export const NavbarChat = styled.div`
-    display: flex;
-    align-items: center;
-    
-    width: 100%;
-    height: 20%;
-    background-color: white;
+  display: flex;
+  align-items: center;
 
-    
-    position: absolute;
-    top: 0;
+  width: 100%;
+  height: 20%;
+  background-color: white;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
 
-    h1 {
-      color: #7AD606;
-    }
-  `
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+  h1 {
+    color: #7ad606;
+  }
+`;
 
 export const InputChat = styled.div`
   width: 100%;
@@ -40,32 +40,32 @@ export const InputChat = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-`
+`;
 
 export const InputFild = styled.input`
-    width: 80%;
-    height: 45px;
-    border-radius: 5px;
-    border-style: none;
-    padding-left: 10px;
-    max-width: 100% !important;
+  width: 80%;
+  height: 45px;
+  border-radius: 5px;
+  border-style: none;
+  padding-left: 10px;
+  max-width: 100% !important;
 
-  :hover{
-    border-color: #76FF94;
+  :hover {
+    border-color: #76ff94;
     border-style: solid;
   }
-  `
+`;
 export const ButtonChat = styled.button`
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-color: #5E985B;
+  background-color: #5e985b;
   border: none;
-  
+
   :hover {
-      background-color: #89BB86;
+    background-color: #89bb86;
   }
-  `
+`;
 export const ContainerMessage = styled.div`
   width: auto;
   display: flex;
@@ -73,11 +73,11 @@ export const ContainerMessage = styled.div`
   gap: 10px;
 
   padding: 8px;
-  border-top: 1px dotted #D0D0D0;
-  &.user{
-      justify-content: end;
+  border-top: 1px dotted #d0d0d0;
+  &.user {
+    justify-content: end;
   }
-  `
+`;
 
 export const HistoryChat = styled.div`
   width: 100%;
@@ -89,7 +89,7 @@ export const HistoryChat = styled.div`
 
   background-color: white;
   overflow-y: hidden;
-`
+`;
 
 export const MessageBox = styled.div`
   width: auto;
@@ -98,9 +98,9 @@ export const MessageBox = styled.div`
   display: flex;
   align-items: center;
   border-radius: 12px;
-  background-color: #DEFFB4;
+  background-color: #deffb4;
 
-    overflow: hidden;
-    /* white-space: nowrap; */
-    text-overflow: ellipsis;
-  `
+  overflow: hidden;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+`;
