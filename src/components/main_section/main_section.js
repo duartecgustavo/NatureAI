@@ -7,7 +7,7 @@ export function MainSection() {
     <>
       <Nav className="navbar fixed-top">
         <div className="container-fluid">
-          <h1>NatureAI 🥦</h1>
+          <h1><a style={{textDecoration: "none", color: "white"}} href="#">NatureAI 🥦</a></h1>
           <a className="navbar-brand" href="#">
             <img
               src={brasil}

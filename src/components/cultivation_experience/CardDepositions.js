@@ -1,11 +1,22 @@
 import { ContainerCardDepositionsFC } from "./styles";
 
-const CardDepositions = ({ title, deposition, name }) => {
+const CardDepositions = ({ title, deposition, name, type }) => {
   return (
     <>
       <ContainerCardDepositionsFC>
-        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <p
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "start", gap: "12px" }}>
+          <h3
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              lineHeight: "initial",
+              pAlign: "left",
+              fontWeight: "bold",
+            }}
+          >
+            📌{type}
+          </h3>
+          <h4
             style={{
               display: "flex",
               justifyContent: "center",
@@ -13,15 +24,13 @@ const CardDepositions = ({ title, deposition, name }) => {
               pAlign: "left",
             }}
           >
-            {title}
-          </p>
+            ❝{title}❞
+          </h4>
         </div>
-        {deposition.map((phrase, index) => (
-          <p key={index} style={{ display: "flex", pAlign: "left" }}>
-            {phrase}
-          </p>
-        ))}
-        <p style={{ display: "flex", justifyContent: "end" }}>{name}</p>
+        <p style={{ display: "flex", pAlign: "left" }}>
+          {deposition}
+        </p>
+        <p style={{ display: "flex", justifyContent: "end" }}>~ {name}</p>
       </ContainerCardDepositionsFC>
     </>
   );

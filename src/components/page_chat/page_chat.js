@@ -14,7 +14,6 @@ import {
 export function Chat() {
   const [inputValue, setInputValue] = useState({});
   const [messages, setMessages] = useState([]);
-    console.log("rre")
   async function handleMessage() {
     if (inputValue.msg.trim() !== "") {
       const response = await callChatGpt(inputValue.msg);
@@ -32,10 +31,10 @@ export function Chat() {
     <>
       <div className="col-8 d-flex align-items-center flex-column gap-3 my-5">
         <h1>Conheça nossa IA que esta em fase de teste!</h1>
-        <p>
+        <h5>
           Digitando sua dúvida pertinente ao tema de cultivo de plantas e
           jardinagem você pode obter respostas surpreendentes.
-        </p>
+        </h5>
       </div>
       <ContainerChat>
         <NavbarChat className="p-5">
